@@ -1,0 +1,91 @@
+:root {
+	--accent-color: #f3c915;
+	--dark-text: #414042;
+}
+
+
+
+/*Общие стили*/
+*, *::beafore, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "TTnorms", san-serif;
+
+}
+
+.title_ls_mb{
+	margin-bottom: 10px !important;
+}
+
+.title_rs_mb{
+	margin-bottom: 5px !important;
+}
+
+.container{
+ 	max-width: 1200px;
+ 	width: 100%; 
+ 	padding: 0 15px;
+ 	margin: 0 auto;
+
+ }
+
+ /*Шапка*/
+ header{
+ 	background-color: #f4f4f4;
+ 	color: var(--dark-text);
+ 	padding: 35px 0;
+ }
+
+.header__wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.header__title{
+	color: var(--accent-color);
+	font-size: 44px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.header__subtitle{
+	font-size: 22px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+
+}
+
+.header__address, .header__birthday, .header__jok{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.header__date{
+	font-size: 18px;
+	font-style: italic;
+}
+
+.header__leftside{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.header__rightside{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+/*.example-avatar{
+ 	width: 500px;
+ 	padding: 0 15px;
+ 	margin: 0 auto;
+ }*/
