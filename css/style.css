@@ -4,7 +4,7 @@
 }
 
 /*Общие стили*/
-*, *::beafore, *::after{
+*, *::beafore, *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -20,6 +20,20 @@ body{
 
 .title_rs_mb{
 	margin-bottom: 5px !important;
+}
+
+.list{
+	list-style: none;
+}
+
+.list__item{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.list__item::before{
+	content: "-";
+	margin-right: 10px;
 }
 .container{
  	max-width: 1200px;
@@ -50,11 +64,14 @@ body{
 	font-size: 22px;
 	font-weight: 500;
 	letter-spacing: 1.5px;
+	margin-bottom: 30px;
 
 }
-.header__address, .header__birthday, .header__jok{
+.header__address, .header__birthday, .header__jok, 
+.header__hub, .header__facebook, .header__gmail{
 	font-size: 18px;
 	font-weight: 400;
+	margin-bottom: 3px;
 }
 .header__date{
 	font-size: 18px;
@@ -74,11 +91,44 @@ body{
 .img__hub, .img__facebook, .img__gmail{
 	width: 48px;
 	height: 48px;
-	margin: 5px;
+	margin: 5px 5px 0 5px;
 }
 
-/*.example-avatar{
- 	width: 500px;
- 	padding: 0 15px;
- 	margin: 0 auto;
- }*/
+.about__image{
+ 	margin-bottom: 110px;
+ }
+
+.fullinfo__wrapper{
+	display: flex;
+}
+
+.fullinfo_leftside{
+	width: 40%;
+	padding-right: 20px;
+
+}
+
+.fullinfo__rightside{
+	width: 60%;
+
+}
+/*Информационный блок*/
+.infoblock{
+	margin-bottom: 55px;
+	color: var(--dark-text);
+}
+
+.infoblock__title{
+	font-size: 22px;
+	font-weight: 700;
+	background-color: var(--accent-color);
+	padding: 15px 35px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.infoblock__text{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.55;
+}
